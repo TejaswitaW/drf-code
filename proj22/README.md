@@ -1,0 +1,1 @@
+# session authentication and  permission class in DRF 

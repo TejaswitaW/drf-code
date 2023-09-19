@@ -1,0 +1,1 @@
+# custom permissions in DRF 

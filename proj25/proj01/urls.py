@@ -1,0 +1,17 @@
+
+from django.contrib import admin
+from django.urls import path,include
+from rest_framework.routers import DefaultRouter
+from api import views
+
+router = DefaultRouter()
+
+router.register('studentapi',views.StudentViewSet,basename='student')
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path("",include(router.urls)),  
+    # to enable login in browsable API, we have
+    # to use its built in URL 
+    path('auth/',include('rest_framework.urls',namespace='rest_framework'))
+]

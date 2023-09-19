@@ -1,0 +1,13 @@
+
+http POST http://127.0.0.1:8000/gettoken/ username='name' password='12345'
+
+
+http GET http://127.0.0.1:8000/studentapi/ 'Authorization:Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk0OTQxMDE4LCJqdGkiOiI4NWMyZTI4ODkwZmU0MTdmYWYwNTYyZTA2YjQ2YTFkMCIsInVzZXJfaWQiOjF9.fKra_5UIxJMAFfU3piwS7bmrwTucYOa1_AXtU0kKogM'
+
+http -f POST http://127.0.0.1:8000/studentapi/ name=Raj roll=114 city=Bokaro 'Authorization:Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk0OTQxMzEzLCJqdGkiOiIzYTRiZWM4MzIyNTQ0MjU4YmI2MTU2NDE4MjA1MzBkNyIsInVzZXJfaWQiOjF9.o4RPgFU_lJeAXmarG1sDjO2qT1PNnc6TIhqsS0HXxaQ' 
+
+http  PUT http://127.0.0.1:8000/studentapi/25/ name=Raje roll=184 city=Dhumka 'Authorization:Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk0OTQxODc1LCJqdGkiOiJlMTRjNjEzZTY3NTE0MWJlYmI0ZDUyNDdjODM3NWJjMyIsInVzZXJfaWQiOjF9.XXl2TZf8SjkE3-8q3blpv-zzjA7ePYHMmbgv872ZTk8' 
+
+http DELETE http://127.0.0.1:8000/studentapi/25/  'Authorization:Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk0OTQxODc1LCJqdGkiOiJlMTRjNjEzZTY3NTE0MWJlYmI0ZDUyNDdjODM3NWJjMyIsInVzZXJfaWQiOjF9.XXl2TZf8SjkE3-8q3blpv-zzjA7ePYHMmbgv872ZTk8'
+
+
